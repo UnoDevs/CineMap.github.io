@@ -1,0 +1,240 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    border: none;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+header {
+    display: flex;
+    width: 100%;
+    background-color:rgb(26, 1, 11);
+    justify-content: center;
+}
+
+nav {
+    color: aliceblue;   
+}
+
+.section-backgd{
+    background-image: url("../resources/cinema.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000000;
+}
+
+
+.rubik-400 {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.head-nav{
+    display: flex;
+    width: 72%;
+    justify-content: center;
+}
+
+.head-nav > span{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.head-icons{
+    text-align: center;
+    background-color: rgb(59, 0, 24);
+    color: aliceblue;
+}
+
+.head-text{
+    text-decoration: none;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.section-default-text{
+    color: aliceblue;
+}
+
+.container-desc{
+    padding-top: 72px;
+    padding-bottom: 72px;
+}
+
+.catalogo-container{
+    background-color: rgb(26,1,11);
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.catalogo-text{
+    color: white;
+    font-size: 24px;
+}
+
+.head-initial{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.head-container{
+    width: 72%;
+}
+
+.movie-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 2%;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.movie-box{
+    margin-left: 36px;
+    margin-right: 36px;
+    margin-top: 4px;
+    border-radius: 2%;
+}
+
+.movie-img{
+    width: 184px;
+    height: 264px;
+    border-radius: 2%;
+}
+
+.movie-box:hover{
+    box-shadow: 0 1px 6px 0 white, 0 3px 6px 0 white;
+}
+
+.movie-text-container{
+    color: bisque;
+    text-shadow: #fff;
+    max-width: 180px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.movie-text-name{
+    margin-left: 4px;
+}
+
+.carrinho-container{
+    background-color: rgb(26, 1, 11);
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-bottom: 52px;
+}
+
+.mingresso-container{
+    background-color: rgb(14, 1, 6);
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.add-ticket-container{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.ticket-info{
+    color: antiquewhite;
+    padding-right: 10%
+}
+
+.info-subtitle{
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+.input-default-style{
+    padding-top: 8px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    margin-top:8px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    outline: none;
+    background-color: aliceblue;
+}
+
+.input-default-style:focus{
+    background-color: aliceblue;
+    box-shadow: 0px 2px 4px 2px purple;
+}
+
+.info-seat-button{
+    margin-top: 8px;
+    padding: 10px 24px;
+    border: 2px solid purple;
+    background-color: rgb(250, 215, 232);
+    border-radius: 4px;
+}
+
+.info-seat-button:hover{
+    background-color: rgb(207, 110, 207)
+}
+
+.info-seat-button:active{
+    background-color: purple
+}
+
+.table-ticket-container{
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+.table-header-text{
+    font-size: 24px;
+}
+
+td{
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 24px;
+    border-spacing: 32px;
+}
+
+.custom-icon-table{
+    margin-left: 4px;
+    margin-right: 16px;
+    background-color: rgb(26, 1, 11);
+    color: beige;
+}
+
+
+.movie-img-mini{
+    width: 96px;
+    height: 148px;
+    border-radius: 5px;   
+}
+
+.final-confirm-text{
+    margin-top: 16px;
+    color: aliceblue;
+}
+
+.footer-container{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(41, 4, 19);
+}
+
+.footer-text{
+    color: aliceblue;
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}

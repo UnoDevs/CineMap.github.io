@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>CineMap</title>
+
+    <!-- CONEXÃO GOOGLE API-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- CONEXÃO CSS -->
+    <link  rel="stylesheet" href="css/index.css" type="text/css">
+</head>
+<body onload="initcatalog()">
+    <header>
+        <nav class="rubik-400 head-nav">
+            <span style="flex-grow: 12">
+                <a href="index.html" class="head-text">CINEMAP</a>
+            </span>
+            <button type="button" style="flex-grow: 1" class="material-symbols-outlined head-icons">account_circle</button>
+        </nav>
+    </header>
+    <div class="head-initial">
+    <section class="section-backgd head-container">
+        <div class="container-desc">
+            <h1 class="rubik-400 section-default-text">Seja Bem-Vindo ao <span style="font-size: 32px;">CINEMAP</span></h1>
+            <h2 style="font-size:16px" class="rubik-400 section-default-text">Ingressos rapidos e com poucos cliques!</h2>
+        </div>
+    </section>
+    </div>
+
+    <section class="catalogo-container">
+        <div class="head-initial">
+            <span class="rubik-400 head-container catalogo-text">
+                CATÁLOGO
+                <span style="font-size: 32px;" class="material-symbols-outlined">playlist_add</span>
+            </span>
+        </div> 
+        <div id="catalog-cont" class="movie-container">
+            <!--Automatizado Script [FILMES DO CATÁLOGO]-->
+        </div>
+    </section>
+    <section class="mingresso-container">
+        <div class="head-initial">
+            <span class="rubik-400 head-container catalogo-text">
+                ADICIONAR INGRESSOS
+                <span style="font-size: 32px;" class="material-symbols-outlined">library_add</span>
+            </span>
+        </div>
+        <div class="head-initial">
+            <div id="edit-cont" class="head-container">
+                <!--Automatizado Script [EDITOR DE INGRESSO]-->
+            </div>
+        </div>
+    </section>
+    <section class="carrinho-container">
+        <div class="head-initial">
+            <span class="rubik-400 head-container catalogo-text">
+                SEUS INGRESSOS
+                <span style="font-size: 32px;" class="material-symbols-outlined">shopping_cart</span>
+            </span>
+        </div>
+        <div class="head-initial">
+            <div id="tickets-container" class="head-container">
+                <!--Automatizado Script [BOTÃO DE FINALIZAR]-->
+            </div>
+        </div>
+    </section>
+    <footer class="head-initial footer-container">
+        <div class="head-container rubik-400 footer-text">
+            Um Site Produzido pela equipe UnoDevs
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>

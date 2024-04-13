@@ -1,0 +1,42 @@
+INGRESSO CONFIRMADO
+
+<tr>
+    <td><img class="movie-img-mini" src="resources/banners/banner_1full.jpg"></td>
+    <td>27/12/2025</td>
+    <td>G8</td>
+    <td>
+        <button type="button" class="material-symbols-outlined custom-icon-table">edit</button>
+        <button type="button" class="material-symbols-outlined custom-icon-table">delete</button>
+    </td>
+</tr>    
+
+INGRESSO TABLE HEAD
+
+    <td>FILME</td>
+    <td>DIA</td>
+    <td>POLTRONA</td>
+    <td>AÇÕES</td>
+
+EDITOR DE INGRESSO
+
+<div class="add-ticket-container">
+    <img style="margin-right: 16px;" class="movie-img" src="resources/banners/banner_1full.jpg">
+    <div class="ticket-info">
+        <h1 class="rubik-400">Planeta Dos Macacos</h1>
+            <h2 class="rubik-400 info-subtitle">Dia do Filme:</h2>
+            <input type="date" class="input-default-style">
+            <h2 class="rubik-400 info-subtitle">Poltrona:</h2>
+            <input type="text" placeholder="A2,G4..." class="input-default-style">
+            <h2 class="rubik-400 info-subtitle">Tudo Pronto?</h2>
+            <button type="button" class="info-seat-button">Registrar Ingresso!</button>
+    </div>
+</div>
+
+CATALOGO ITEM
+
+<div class="movie-box">
+        <img class="movie-img" src="resources/banners/banner_1full.jpg">
+        <div class="movie-text-container">
+            <span class="rubik-400 movie-text-name">Planeta dos Macacos: O Reinado</span>
+        </div>
+</div>
