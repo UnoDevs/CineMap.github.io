@@ -238,3 +238,7 @@ td{
     margin-top: 16px;
     margin-bottom: 16px;
 }
+
+.table-adjust{
+    overflow-x: auto;
+}
