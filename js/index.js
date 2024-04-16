@@ -66,17 +66,18 @@ function addticket(index){
             isEditing = false;
             editingIndex = -1;
         } 
+
+        if(!haveTicketHead){
+            addtickethead();
+            haveTicketHead = true;
+        }
+
         updatetable();
         removemaketicket();
     }
 }
 
 function updatetable(){
-    if(!haveTicketHead && listaDeIngressos.length > 0){
-        addtickethead();
-        haveTicketHead = true;
-    }
-
     let tickets = document.getElementById("tickets");
     tickets.innerHTML = ``;
     let row;
@@ -95,8 +96,9 @@ function updatetable(){
         `;
         tickets.append(row);
     })
-
-    row.scrollIntoView({behavior: "smooth"});
+    if(row){
+        row.scrollIntoView({behavior: "smooth"});
+    }
 }
 
 function editticket(index){
@@ -111,11 +113,11 @@ function editticket(index){
 
 function removeticket(index){
     listaDeIngressos.splice(index,1);
+    updatetable();
     if(listaDeIngressos.length == 0){
         removetickethead();
         haveTicketHead = false;
     }
-    updatetable();
 }
 
 function removemaketicket(){
@@ -159,11 +161,12 @@ function addtickethead(){
 
 function removetickethead(){
     let table_container = document.getElementById("tickets-container");
+    haveTicketHead = false;
     table_container.innerHTML = ``;
 }
 
 function removeall(){
     listaDeIngressos = [];
-    removetickethead();
     updatetable();
+    removetickethead();
 }
