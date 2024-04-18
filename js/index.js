@@ -112,11 +112,13 @@ function editticket(index){
 }
 
 function removeticket(index){
-    listaDeIngressos.splice(index,1);
-    updatetable();
-    if(listaDeIngressos.length == 0){
-        removetickethead();
-        haveTicketHead = false;
+    if(confirm('Tem certeza que deseja deletar?')){
+        listaDeIngressos.splice(index,1);
+        updatetable();
+        if(listaDeIngressos.length == 0){
+            removetickethead();
+            haveTicketHead = false;
+        }
     }
 }
 
